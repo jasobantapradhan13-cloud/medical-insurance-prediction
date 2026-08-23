@@ -1,0 +1,66 @@
+{
+  "final_model": "Gradient Boosting Regressor (baseline)",
+  "features": [
+    "age",
+    "bmi",
+    "children",
+    "sex",
+    "smoker",
+    "region"
+  ],
+  "numeric_features": [
+    "age",
+    "bmi",
+    "children"
+  ],
+  "categorical_features": [
+    "sex",
+    "smoker",
+    "region"
+  ],
+  "target": "charges",
+  "test_size": 0.2,
+  "random_state": 42,
+  "best_params": {
+    "model__learning_rate": 0.05,
+    "model__max_depth": 2,
+    "model__n_estimators": 200
+  },
+  "cv_best_rmse": 4624.951410599574,
+  "test_metrics": {
+    "MAE": 2517.4678305027105,
+    "MSE": 18218239.91837331,
+    "RMSE": 4268.283017604774,
+    "R2": 0.9008563879867466
+  },
+  "model_comparison": [
+    {
+      "Model": "Gradient Boosting Regressor",
+      "MAE": 2517.4678305027105,
+      "MSE": 18218239.91837331,
+      "RMSE": 4268.283017604774,
+      "R2": 0.9008563879867466
+    },
+    {
+      "Model": "Random Forest Regressor",
+      "MAE": 2657.61175591903,
+      "MSE": 22316362.656377845,
+      "RMSE": 4724.019756137546,
+      "R2": 0.8785544152089233
+    },
+    {
+      "Model": "Linear Regression",
+      "MAE": 4177.045561036326,
+      "MSE": 35478020.6752356,
+      "RMSE": 5956.342894363587,
+      "R2": 0.8069287081198012
+    },
+    {
+      "Model": "Ridge Regression",
+      "MAE": 4193.891909470002,
+      "MSE": 35663132.65314075,
+      "RMSE": 5971.861740959912,
+      "R2": 0.8059213292402463
+    }
+  ]
+}
